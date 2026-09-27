@@ -1,0 +1,101 @@
+﻿ID Barang,Merk/Type,Spesifikasi,Tahun Pembuatan,Harga,Jumlah Stok
+HP0001,Samsung Galaxy A05,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,1599000,12
+HP0002,Samsung Galaxy A15,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,2499000,19
+HP0003,Samsung Galaxy A25,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3499000,26
+HP0004,Samsung Galaxy A55,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,5999000,33
+HP0005,Samsung Galaxy S24,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,9999000,40
+HP0006,Apple iPhone 11,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,1674000,47
+HP0007,Apple iPhone 12,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,2574000,6
+HP0008,Apple iPhone 13,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3574000,13
+HP0009,Apple iPhone 14,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,6074000,20
+HP0010,Apple iPhone 15,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,10074000,27
+HP0011,Xiaomi Redmi 12,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,1749000,34
+HP0012,Xiaomi Redmi 13,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,2649000,41
+HP0013,Xiaomi Redmi Note 12,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3649000,48
+HP0014,Xiaomi Redmi Note 13,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,6149000,7
+HP0015,Xiaomi Xiaomi 13T,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,10149000,14
+HP0016,POCO C65,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,1824000,21
+HP0017,POCO M6 Pro,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,2724000,28
+HP0018,POCO X5 Pro,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3724000,35
+HP0019,POCO X6,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,6224000,42
+HP0020,POCO F6,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,10224000,49
+HP0021,OPPO A18,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,1899000,8
+HP0022,OPPO A38,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,2799000,15
+HP0023,OPPO A58,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3799000,22
+HP0024,OPPO Reno11 F,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,6299000,29
+HP0025,OPPO Reno12,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,10299000,36
+HP0026,vivo Y17s,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,1974000,43
+HP0027,vivo Y27,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,2874000,50
+HP0028,vivo Y36,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3874000,9
+HP0029,vivo V29,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,6374000,16
+HP0030,vivo V30,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,10374000,23
+HP0031,realme C53,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,2049000,30
+HP0032,realme C67,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,2949000,37
+HP0033,realme 11,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3949000,44
+HP0034,realme 12+,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,6449000,51
+HP0035,realme GT 6,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,10449000,10
+HP0036,Infinix Smart 8,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,2124000,17
+HP0037,Infinix Hot 40i,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3024000,24
+HP0038,Infinix Note 30,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,4024000,31
+HP0039,Infinix Note 40,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,6524000,38
+HP0040,Infinix GT 20 Pro,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,10524000,45
+HP0041,TECNO Spark 20,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,2199000,52
+HP0042,TECNO Spark 20 Pro,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3099000,11
+HP0043,TECNO Pova 5,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,4099000,18
+HP0044,TECNO Camon 20,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,6599000,25
+HP0045,TECNO Camon 30,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,10599000,32
+HP0046,Motorola Moto G24,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,2274000,39
+HP0047,Motorola Moto G54,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3174000,46
+HP0048,Motorola Moto G84,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,4174000,5
+HP0049,Motorola Edge 40,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,6674000,12
+HP0050,Motorola Edge 50 Pro,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,10674000,19
+HP0051,Nokia C32,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,2349000,26
+HP0052,Nokia G22,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3249000,33
+HP0053,Nokia G42,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,4249000,40
+HP0054,Nokia X30,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,6749000,47
+HP0055,Nokia XR21,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,10749000,6
+HP0056,Huawei nova Y71,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,2424000,13
+HP0057,Huawei nova 11i,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3324000,20
+HP0058,Huawei nova 12i,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,4324000,27
+HP0059,Huawei P60 Pro,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,6824000,34
+HP0060,Huawei Mate 50 Pro,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,10824000,41
+HP0061,HONOR X5 Plus,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,2499000,48
+HP0062,HONOR X7b,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3399000,7
+HP0063,HONOR X8b,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,4399000,14
+HP0064,HONOR 90 Lite,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,6899000,21
+HP0065,HONOR Magic6 Pro,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,10899000,28
+HP0066,ASUS Zenfone 9,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,2574000,35
+HP0067,ASUS Zenfone 10,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3474000,42
+HP0068,ASUS ROG Phone 6,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,4474000,49
+HP0069,ASUS ROG Phone 7,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,6974000,8
+HP0070,ASUS ROG Phone 8,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,10974000,15
+HP0071,Google Pixel 6a,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,2649000,22
+HP0072,Google Pixel 7a,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3549000,29
+HP0073,Google Pixel 7,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,4549000,36
+HP0074,Google Pixel 8,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,7049000,43
+HP0075,Google Pixel 8 Pro,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,11049000,50
+HP0076,OnePlus Nord CE 3 Lite,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,2724000,9
+HP0077,OnePlus Nord 3,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3624000,16
+HP0078,OnePlus Nord 4,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,4624000,23
+HP0079,OnePlus 11,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,7124000,30
+HP0080,OnePlus 12,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,11124000,37
+HP0081,Sony Xperia 10 IV,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,2799000,44
+HP0082,Sony Xperia 10 V,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3699000,51
+HP0083,Sony Xperia 5 IV,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,4699000,10
+HP0084,Sony Xperia 1 V,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,7199000,17
+HP0085,Sony Xperia 1 VI,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,11199000,24
+HP0086,ZTE Blade A73,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,2874000,31
+HP0087,ZTE Blade V40,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3774000,38
+HP0088,ZTE Blade V50,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,4774000,45
+HP0089,ZTE Axon 40,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,7274000,52
+HP0090,ZTE Axon 50,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,11274000,11
+HP0091,nubia Neo 2,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,2949000,18
+HP0092,nubia Focus Pro,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3849000,25
+HP0093,nubia Z50,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,4849000,32
+HP0094,nubia Z60 Ultra,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,7349000,39
+HP0095,nubia RedMagic 9 Pro,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,11349000,46
+HP0096,iQOO Z7,RAM 4GB; penyimpanan 64GB; layar 6.5 inci; baterai 5000mAh,2022,3024000,5
+HP0097,iQOO Z9,RAM 6GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,3924000,12
+HP0098,iQOO Neo 7,RAM 8GB; penyimpanan 128GB; layar 6.6 inci; baterai 5000mAh,2023,4924000,19
+HP0099,iQOO Neo 9,RAM 8GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,7424000,26
+HP0100,iQOO 12,RAM 12GB; penyimpanan 256GB; layar 6.7 inci; baterai 5000mAh,2024,11424000,33

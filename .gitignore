@@ -1,0 +1,12 @@
+# Rahasia: JANGAN pernah ikut ter-upload ke GitHub
+.env
+.streamlit/secrets.toml
+
+# Folder hasil proses otomatis, tidak perlu disimpan
+chroma_db/
+__pycache__/
+.venv/
+venv/
+
+# File cadangan pribadi
+backup_script.py
