@@ -25,6 +25,7 @@ Prasyarat:
 
 import os
 import glob
+from pathlib import Path
 
 from dotenv import load_dotenv
 
@@ -48,14 +49,17 @@ CHUNK_SIZE = 500
 CHUNK_OVERLAP = 50
 TOP_K = 3
 
+BASE_DIR = Path(__file__).resolve().parent
+
 # Folder berisi knowledge document. Semua file .pdf di dalamnya akan
 # dianggap sebagai satu sumber pengetahuan terpisah.
-KNOWLEDGE_DIR = "./knowledge_docs"
+KNOWLEDGE_DIR = BASE_DIR / "knowledge_docs"
 
 # System prompt disimpan terpisah dari kode, supaya bisa diubah/di-review
 # tanpa menyentuh logika program, dan supaya jejak revisinya jelas kalau
 # dipakai bersama version control (git).
-SYSTEM_PROMPT_PATH = "./system_prompt.md"
+SYSTEM_PROMPT_PATH = BASE_DIR / "system_prompt.md"
+PERSIST_DIR = BASE_DIR / "chroma_db"
 
 
 # ============================================================
@@ -74,7 +78,7 @@ def buat_model() -> ChatGroq:
 # 3. DATA INGESTION (Load -> Split -> Embed -> Store)
 # ============================================================
 
-def muat_dokumen(folder: str) -> list[Document]:
+def muat_dokumen(folder: str | os.PathLike[str]) -> list[Document]:
     """
     Load semua file .pdf di dalam folder jadi list of Document, pakai
     PyMuPDF4LLMLoader langsung dari library LangChain (langchain-pymupdf4llm).
@@ -84,13 +88,12 @@ def muat_dokumen(folder: str) -> list[Document]:
     masing-masing file lalu digabung jadi satu list.
     """
     daftar_dokumen = []
-    path_file = sorted(glob.glob(os.path.join(folder, "*.pdf")))
-    # glob.glob(...) bertugas mencari file yang sudah ditentukan di os.path.join(), 
-    # dan hasilnya berupa daftar nama file yang cocok, dalam bentuk list Python.
+    folder_path = Path(folder).expanduser().resolve()
+    path_file = sorted(folder_path.glob("*.pdf"))
 
     if not path_file:
         raise FileNotFoundError(
-            f"Tidak ada file .pdf ditemukan di folder '{folder}'. "
+            f"Tidak ada file .pdf ditemukan di folder '{folder_path}'. "
             "Pastikan folder knowledge_docs/ berisi file sumber."
         )
 
@@ -100,7 +103,7 @@ def muat_dokumen(folder: str) -> list[Document]:
         # OCR yang tidak perlu untuk PDF berbasis teks seperti artikel ini
         # (mempercepat proses dan menghindari pesan "Using Tesseract..." di
         # konsol yang bisa bikin peserta bingung).
-        loader = PyMuPDF4LLMLoader(file_path=path, mode="single", use_layout=False)
+        loader = PyMuPDF4LLMLoader(file_path=str(path), mode="single", use_layout=False)
         daftar_dokumen.extend(loader.load())
 
     return daftar_dokumen
@@ -123,6 +126,7 @@ def bangun_vectorstore(dokumen: list) -> Chroma:
 
     vectorstore = Chroma(
         collection_name=COLLECTION_NAME,
+        persist_directory=str(PERSIST_DIR),
     )
     # reset_collection() dipakai supaya aman dijalankan berulang kali
     # (script ini bisa dijalankan ulang tanpa bikin data dobel atau error).
@@ -140,7 +144,7 @@ def format_docs(daftar_dokumen: list[Document]) -> str:
     """Gabungkan beberapa chunk hasil retrieval jadi satu teks konteks."""
     return "\n\n".join(dok.page_content for dok in daftar_dokumen)
 
-def muat_system_prompt(path: str) -> str:
+def muat_system_prompt(path: str | os.PathLike[str]) -> str:
     """
     Baca system prompt dari file .md terpisah.
 
@@ -148,7 +152,7 @@ def muat_system_prompt(path: str) -> str:
     yang bertanggung jawab atas kualitas jawaban chatbot) tanpa perlu
     menyentuh atau memahami kode Python-nya sama sekali.
     """
-    with open(path, encoding="utf-8") as f:
+    with open(Path(path), encoding="utf-8") as f:
         return f.read()
 
 def buat_rag_chain(retriever, model: ChatGroq, system_prompt: str):
@@ -185,11 +189,11 @@ def buat_rag_chain(retriever, model: ChatGroq, system_prompt: str):
 def main():
     # load_dotenv() harus dipanggil sebelum ChatGroq dibuat, supaya
     # GROQ_API_KEY sudah ada di environment variable saat dibutuhkan.
-    load_dotenv()
+    load_dotenv(dotenv_path=BASE_DIR / ".env")
     if not os.getenv("GROQ_API_KEY"):
         raise RuntimeError(
             "GROQ_API_KEY tidak ditemukan. Pastikan file .env ada di folder "
-            "yang sama dengan script ini dan berisi GROQ_API_KEY=..."
+            f"'{BASE_DIR}' dan berisi GROQ_API_KEY=..."
         )
 
     print("Menyiapkan model...")
@@ -205,23 +209,25 @@ def main():
 
     print(f"Memuat system prompt dari '{SYSTEM_PROMPT_PATH}'...")
     system_prompt = muat_system_prompt(SYSTEM_PROMPT_PATH)
-    
+
     print("Merakit RAG chain...")
     rag_chain = buat_rag_chain(retriever, model, system_prompt)
 
     print("\nRAG chatbot siap. Ketik pertanyaan, atau 'keluar' untuk berhenti.\n")
 
     while True:
-        pertanyaan = input("Pertanyaan: ").strip()
+        try:
+            pertanyaan = input("Pertanyaan: ").strip()
+        except EOFError:
+            print("\nSesi berakhir. Sampai jumpa.")
+            break
         if pertanyaan.lower() in {"keluar", "exit", "quit"}:
             print("Sampai jumpa.")
             break
         if not pertanyaan:
             continue
-
         jawaban = rag_chain.invoke(pertanyaan)
         print(f"Jawaban : {jawaban}\n")
-
 
 if __name__ == "__main__":
     main()
